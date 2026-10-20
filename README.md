@@ -7,6 +7,18 @@ Proyecto del curso **Introducción a la Ciencia de Datos y sus Metodologías**.
 
 **Autor:** Oscar Gamaliel Sandoval Robles.
 
+## Vista del dashboard
+
+La aplicación Dash muestra un mapa interactivo y un histograma construidos con los eventos almacenados en MySQL. Esta captura corresponde a una ejecución del prototipo; el total y las fechas cambian con los datos cargados.
+
+![Dashboard de actividad sísmica con el mapa de eventos y el histograma de magnitudes](docs/images/dashboard.png)
+
+En el mapa, el tamaño del círculo representa la magnitud mediante una escala visual y el color indica la profundidad del hipocentro en kilómetros. Al pasar el cursor aparecen los datos del evento. El histograma muestra cuántos registros hay por intervalo de magnitud.
+
+**Consultar base de datos** vuelve a leer MySQL. Para obtener eventos nuevos de USGS se ejecuta el recolector, como se explica en las instrucciones de uso.
+
+GitHub muestra esta captura y el código del proyecto. La aplicación interactiva se ejecuta localmente en [http://localhost:8051](http://localhost:8051) después de iniciar los contenedores.
+
 ## Problemática y objetivo
 
 Un conteo regional de sismos reúne eventos con características distintas. Para una primera caracterización es necesario examinar conjuntamente su localización, magnitud y profundidad, además de conocer el intervalo temporal de los registros disponibles.
@@ -69,6 +81,9 @@ sismos-mexico/
 ├── README.md
 ├── .gitignore
 ├── .env.example
+├── docs/
+│   └── images/
+│       └── dashboard.png
 ├── compose.yaml
 ├── mysql/
 │   └── 01-init.sql
