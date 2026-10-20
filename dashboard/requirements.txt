@@ -1,0 +1,4 @@
+dash>=3,<4
+plotly>=6,<7
+pandas>=2.2,<3
+mysql-connector-python>=9,<10

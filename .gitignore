@@ -1,0 +1,37 @@
+# Configuración local y secretos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Entornos y caché de Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Registros y copias locales de bases de datos
+*.log
+*.sql.gz
+*.sql.bak
+/backups/
+/mysql_data/
+
+# Material de ensayo y archivos de construcción
+/ensayo_audio/
+/.presentacion-build/
+/.codex-finalizer/
+node_modules/
+
+# Temporales del sistema y de Office
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
+*.tmp
+*.swp
