@@ -4,6 +4,7 @@
 !.env.example
 *.pem
 *.key
+/certs/*.crt
 
 # Entornos y caché de Python
 .venv/
@@ -26,6 +27,7 @@ __pycache__/
 /ensayo_audio/
 /.presentacion-build/
 /.codex-finalizer/
+/.qa/
 node_modules/
 
 # Temporales del sistema y de Office
